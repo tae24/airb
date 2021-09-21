@@ -1,0 +1,42 @@
+/*------------------------------------------*/
+// 変数
+// フォントカラー
+
+$color_base: #484848;
+$color_sub: #FFFFFF;
+$color_link: #008489;
+
+// バックグラウンドカラー
+
+$background_base: #FFFFFF;
+$background_green: #006C70;
+$background_gray: #EBEBEB;
+
+// レスポンシブ
+
+$pc: 1025px;
+$tab: 600px;
+$tab2: 1024px;
+$sp: 599px;
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+@mixin tab {
+    @media (min-width: ($tab)) {
+        @content;
+    }
+}
+@mixin tab2 {
+    @media (max-width: ($tab2)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
